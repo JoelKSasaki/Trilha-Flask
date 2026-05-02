@@ -1,0 +1,20 @@
+{% extends "template.html"%}
+{% block content %}
+
+    <form action="/autenticar" method="post">
+        <fieldset>
+            <input type="hidden" name="proxima" value="{{proxima}}">
+            <div class="form_group">
+                <label for="">Nome de usuário</label>
+                <input type="text" name="username" id="username" class="form-control">
+            </div>
+            <div class="form_group">
+                <label for="">Senha</label>
+                <input type="password" name="senha" id="senha" class="form-control">
+            </div>            
+
+            <button class="btn btn-primary" type="submit">Fazer login</button>
+        </fieldset>
+    </form>
+
+{% endblock %}
