@@ -1,7 +1,7 @@
 {% extends "template.html"%}
 {% block content %}
 
-    <form action="/autenticar" method="post">
+    <form action="{{url_for('autenticar')}}" method="post">
         <fieldset>
             <input type="hidden" name="proxima" value="{{proxima}}">
             <div class="form_group">
